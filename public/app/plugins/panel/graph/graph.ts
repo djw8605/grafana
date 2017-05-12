@@ -248,7 +248,7 @@ coreModule.directive('grafanaGraph', function($rootScope, timeSrv, popoverSrv) {
               fill: 1,
               barWidth: 1,
               zero: false,
-              lineWidth: 0
+              lineWidth: panel.barOutline ? 0 : panel.barOutline
             },
             points: {
               show: panel.points,
